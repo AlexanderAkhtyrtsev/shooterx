@@ -1,0 +1,15 @@
+First {
+	Stand = 87, 65
+	Seat = 83
+	Shot = 70, 71
+	Reload = 82
+	BuyMenu = 66
+}
+
+Second {
+	Stand = 37, 38
+	Seat = 40
+	Shot = 13, 45, 96
+	Reload = 46, 110
+	BuyMenu = 107
+}

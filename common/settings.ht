@@ -1,0 +1,65 @@
+ <div id=settings>
+<div style="padding:3;float:left;width:50%;border-right:1px solid gray;">
+	<div style="background: #333; color:gray;font-size:20;text-align:center;">##player 1</div>
+	<div id="ent_nm1">##name:<br>
+	<input type=text id=pl1_nm maxlength=10></div>
+	<input type=checkbox onclick="$('#btlvch1').toggle();toggle_entnm(1)" id="cb_bot1">##bot 
+	<span class="hidden" id="btlvch1">
+	<img src="src/icons/sq.gif" value=0 title="##bot0" class="sq1">
+	<img src="src/icons/sq.gif" value=1 title="##bot1" class="sq1">
+	<img src="src/icons/sq.gif" value=2 title="##bot2" class="sq1">
+	<img src="src/icons/sq.gif" value=3 title="##bot3" class="sq1">
+	<img src="src/icons/sq.gif" value=4 title="##bot4" class="sq1">
+	</span>
+</div>
+
+<div style="padding:3;width:100%">
+	<div style="background: #333; color:gray;font-size:20;text-align:center;">##player 2</div>
+	<div id="ent_nm2">##name:<br>
+	<input type=text id=pl2_nm maxlength=10></div>
+	<input type=checkbox onclick="$('#btlvch2').toggle();toggle_entnm(2)" id="cb_bot2">##bot 
+	<span class="hidden" id="btlvch2">
+	<img src="src/icons/sq.gif" value=0 title="##bot0" class="sq2">
+	<img src="src/icons/sq.gif" value=1 title="##bot1" class="sq2">
+	<img src="src/icons/sq.gif" value=2 title="##bot2" class="sq2">
+	<img src="src/icons/sq.gif" value=3 title="##bot3" class="sq2">
+	<img src="src/icons/sq.gif" value=4 title="##bot4" class="sq2">
+	</span>
+</div>
+<div style="border-top:1px solid gray;width:100%;">
+<div style="padding:3;float:left;width:49.39%;">
+##start_money: <br> <input type=text id=stmoney maxlength=6 size=4 value=3000>
+</div>
+<div style="padding:3;margin-left:0;width:100%;border-left:1px solid gray;">
+##limit:<br>
+<input type=radio name=lmt value=0 onclick="$('.lmt_inp').hide()" checked>##none<br>
+<input type=radio name=lmt onclick="$('.lmt_inp').hide();$('#rlmt').show().val(10).focus()" value=1>##win_limit <input type=text size=1 maxlength=3 id=rlmt class="hidden lmt_inp"><br>
+<input type=radio name=lmt onclick="$('.lmt_inp').hide();$('#wlmt').show().val(10).focus()" value=2>##round_limit <input type=text size=1 maxlength=3 id=wlmt class="hidden lmt_inp"><br>
+</div>
+<div style="text-align:center;padding:4;border-top: 1px solid gray;">
+	##start_weapon:<br>
+	<img class="wp_ic" title="GLOCK" 			value="glock" src="src/icons/weapons/glock_icon.gif">
+	<img class="wp_ic" title="USP" 			value="usp" src="src/icons/weapons/usp_icon.gif">
+	<img class="wp_ic" title="Desert Eagle" value="deagle" src="src/icons/weapons/deagle_icon.gif">
+	<img class="wp_ic" title="UZI" 			value="uzi" src="src/icons/weapons/uzi_icon.gif">
+	<img class="wp_ic" title="MP5" 			value="mp5" src="src/icons/weapons/mp5_icon.gif">
+	<img class="wp_ic" title="M4A1" 		value="m4" src="src/icons/weapons/m4_icon.gif">
+	<img class="wp_ic" title="AK-47" 		value="ak47" src="src/icons/weapons/ak47_icon.gif">
+</div>
+<input type=checkbox id=1hpmod>1hp Mod<br>
+<a href='' onclick='show_controls()'>##controls</a>
+<center><input type="button" id="play_btn" onclick="start_game()" style="display:block;" value="> ##play <"></center>
+ <style>
+	
+ .wp_ic { filter: alpha(opacity=50); height:20}
+ .wp_checked {height: 30;}
+ .sq1, .sq2 {cursor:pointer;height:10;width:20;margin-left:-3;filter:alpha(opacity=50)}
+ 
+ .sq1_checked, .sq2_checked {
+ width: 24 !important;
+ height: 12 !important;
+ filter: alpha(opacity=100) !important;
+ }
+ 
+ </style>
+ </div>

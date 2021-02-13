@@ -1,0 +1,173 @@
+* {margin:0;padding:0}
+
+body{
+	background: black;
+	width: 492;
+	overflow: hidden;
+}
+
+#main_head {
+	position: absolute;
+	border: 1px solid gray;
+	background-color: #6C6161;
+	padding:2;
+}
+
+#sett_overlay {
+	position: absolute;
+	top: 45; left:4;
+	z-index: 5;
+	width: 484; height: 340;
+}
+
+#settings {
+	z-index:6;
+	background:#756E6E;
+	height:340;
+	filter:alpha(opacity=90);
+}
+
+#main_head h1 {
+	text-align:center;
+	color:black;
+	width: 100%;
+}
+
+
+#round_table {
+	width:250;height:100;
+}
+
+#info {
+	position: absolute;
+	top:100;
+	background: #6C6161;
+	color: black; 
+	border: 1px solid gray;
+	z-index: 7
+}
+
+#info td {
+	border: 1px solid #756E6E;
+	padding: 1px;
+}
+
+
+
+#game {
+	position: absolute;
+	top: 45;
+	width: 484px;
+	z-index: 0;
+	height: 340;
+	background: url("../src/bg.png") #6C6161;
+	border: 1px solid gray;
+	padding: 7%;
+	left: 4;
+}
+
+#score {
+	position: absolute;
+	top: 56; left: 500;
+	background-color: #6C6161;
+	border: 1px solid gray;
+	width: 500; height: 110;
+}
+
+#player1, #player2 {
+	position:	absolute;
+	bottom: 	20px;
+	height:		140px;
+	z-index: 	4;
+}
+
+#player1 {	left:	20px;}
+
+#player2 { 
+	right: 20px;
+}
+
+.left {float:left;}
+.right {float:right;}
+
+.main_block {display:block;}
+
+
+.inf {
+	position:	absolute;
+	width:		50;
+	z-index:	5;
+	bottom:		0; 
+	color:		white;
+	font-size:	60%
+}
+
+.hidden, .h {
+	display: none;
+}
+
+
+#shadow{
+	position:	absolute;
+	top: 0; left: 0;
+	background: black;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=0);
+	z-index: 5;
+}
+
+#pause_s {
+	z-index: 	6;
+	position: 	absolute;
+	cursor: 	pointer;
+}
+
+#hp1, #hp2  {
+	position: absolute;bottom: 2;
+	font-size:12;
+	z-index:2;
+	font-family: arial;
+}
+
+#hp1 {left: 10; }
+
+#hp2  {
+	right: 50px;
+	width: 50px;
+}
+
+#ammo1, #ammo2 {
+	position:		absolute;
+	font-family: 	arial;
+	bottom: 		2px;
+	font-size:		12;
+	z-index:		2;
+}
+
+#ammo1 { left: 80px; }
+
+#ammo2 { right: 0px;}
+
+
+
+
+.dmg {
+	position: 	absolute;
+	font-size: 	10;
+	color: 		#a00;
+}
+
+a{color: black; font-size: 12;}
+
+.buymenu {
+	position: absolute;
+	width: 140px;
+	filter: alpha(opacity=60);
+	background: #555;
+	color: white;
+	z-index: 3;
+}
+
+.buymenu table {font-size: 80%}
+.buymenu tr {background: #444}

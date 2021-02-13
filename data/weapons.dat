@@ -1,0 +1,87 @@
+Weapon Usp
+	Cost: 451
+	Speed: 130
+	MinDmg: 12
+	MaxDmg: 58
+	Ammo: 12
+	Type: 1
+	Reload: 840
+	Name: USP
+	Spread: 5.5
+End
+
+
+Weapon Deagle
+	Cost: 784
+	Speed: 180
+	MinDmg: 40
+	MaxDmg: 100
+	Ammo: 9
+	Type: 1
+	Reload: 800
+	Name: Desert Eagle
+	Spread: 30
+End
+
+Weapon UZI
+	Cost: 1283
+	Speed: 50
+	MinDmg: 20
+	MaxDmg: 49
+	Ammo: 30
+	Type: 2
+	Reload: 900
+	Name: UZI
+	Spread: 5
+End
+
+Weapon MP5
+	Cost: 1789
+	Speed: 70
+	MinDmg: 23
+	MaxDmg: 60
+	Ammo: 30
+	Type: 2
+	Reload: 700
+	Name: MP5
+	Spread: 3.5
+End
+
+Weapon M4
+	Cost: 3874
+	Speed: 80
+	MinDmg: 25
+	MaxDmg: 76
+	Ammo: 30 
+	Type: 3
+	Reload: 1000
+	Name: M4A1
+	Spread: 5
+End
+
+Weapon AK47
+	Cost: 3547
+	Speed: 90  
+	MinDmg: 29
+	MaxDmg: 87
+	Ammo: 30 
+	Type: 3
+	Reload: 800
+	Name: AK-47
+	Spread: 7
+End
+
+
+Weapon Glock
+	Cost: 350
+	Speed: 110
+	MinDmg: 10
+	MaxDmg: 50
+	Ammo: 20
+	Type: 1
+	Reload: 600
+	Name: Glock
+	Spread: 2.2
+End
+
+
